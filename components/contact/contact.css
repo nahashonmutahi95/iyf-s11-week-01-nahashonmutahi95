@@ -1,0 +1,46 @@
+/* Contact Section Layout */
+#contact-info {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Reset default browser italics on <address> elements */
+address.contact-card {
+    font-style: normal;
+    background-color: #f9f9f9;
+    border-left: 4px solid #3b82f6;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Hyperlinks decoration */
+#contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact-info a:hover,
+#contact-info a:focus {
+    text-decoration: underline;
+}
+
+/* Social Media Horizontal List */
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
