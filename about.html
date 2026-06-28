@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — About</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-wrap">
+      <div class="brand"><a href="index.html">Your Name</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h1>About Me</h1>
+      <p>I’m Your Name — a developer who loves building usable, accessible web experiences. (Write a 2–3 sentence background here.)</p>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <ul class="skills">
+          <li>HTML / semantic markup</li>
+          <li>CSS / responsive layouts</li>
+          <li>JavaScript (vanilla + frameworks)</li>
+          <li>Accessibility (a11y)</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="experience-title">
+        <h2 id="experience-title">Education & Experience</h2>
+        <dl class="timeline">
+          <dt>2024 — Frontend Apprenticeship</dt>
+          <dd>Completed hands-on projects building accessible UI components.</dd>
+
+          <dt>2022 — Bachelor of Science in Computer Science</dt>
+          <dd>University Name — Relevant coursework: web development, human-computer interaction.</dd>
+        </dl>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Your Name</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const links = document.querySelectorAll('nav a');
+      const path = location.pathname.split('/').pop() || 'index.html';
+      links.forEach(a => {
+        if (a.getAttribute('href') === path) a.classList.add('active');
+      });
+    })();
+  </script>
+</body>
+</html>

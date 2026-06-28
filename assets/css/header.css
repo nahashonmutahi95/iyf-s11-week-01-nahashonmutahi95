@@ -1,0 +1,54 @@
+/* Reset basic margins for clean alignment */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header background container */
+.site-header {
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Core Navigation Flexbox Layout */
+.main-navigation {
+    display: flex;
+    justify-content: space-between; /* Pushes logo left and links right */
+    align-items: center;            /* Centers items vertically */
+    max-width: 1200px;
+    margin: 0 auto;                 /* Centers the menu container on wide screens */
+}
+
+/* Logo styling */
+.site-logo a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+/* Links Container Layout */
+.nav-links {
+    display: flex;
+    list-style: none;               /* Removes default bullet points */
+    gap: 1.5rem;                    /* Even spacing between links */
+}
+
+/* Individual Link Typography and Animations */
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover and Focus interaction states */
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #3b82f6;                 /* Accessible blue accent on interaction */
+    outline: none;
+}
