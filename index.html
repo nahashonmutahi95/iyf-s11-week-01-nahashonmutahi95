@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nahashon Mutahi - About Me</title>
+    <link rel="stylesheet" href="/iyf-s11-week-02-nahashonmutahi95/index.css">
 </head>
 <body>
+
+    <!-- Navigation -->
+    <div class="navbar-demo-wrap">
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">NM<span>.</span></a>
+
+            <!-- hamburger (mobile only) -->
+            <button class="navbar-toggle" onclick="
+                this.nextElementSibling.classList.toggle('open')
+            " aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="navbar-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="/iyf-s11-week-02-nahashonmutahi95/about.html">About</a></li>
+                <li><a href="/iyf-s11-week-02-nahashonmutahi95/projects.html">Projects</a></li>
+                <li><a href="/iyf-s11-week-02-nahashonmutahi95/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- card row -->
+     <div class="exercise-block">
+        <p class="section-title">Card Row</p>
+ 
+        <div class="card-row">
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-body">
+                    <p class="card-tag">Branding</p>
+                    <p class="card-title">Noma Studio Rebrand</p>
+                    <p class="card-desc">Complete identity overhaul for a Copenhagen architecture practice — logo, type, and signage.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-body">
+                    <p class="card-tag">Product</p>
+                    <p class="card-title">Faro Design System</p>
+                    <p class="card-desc">A component library and token system built to unify three product teams across two platforms.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+ 
+            <div class="card">
+                <div class="card-image"></div>
+                <div class="card-body">
+                    <p class="card-tag">Motion</p>
+                    <p class="card-title">Drift App Onboarding</p>
+                    <p class="card-desc">Interaction design and micro-animation system for a fintech app's first-run experience.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
    <h1>Nahashon Munyiri Mutahi</h1>
 
@@ -27,6 +86,79 @@
     <h1>Reach Me Through</h1>
     
     <a href="https://www.linkedin.com/in/nahashon-munyiri-mutahi-9b1b8a1b2/" target="_blank">LinkedIn</a><br>
+
+    <!-- photo gallery -->
+     <div class="exercise-block">
+        <p class="section-title">Photo Gallery Grid</p>
+        <p class="section-desc">
+            3-column grid · equal widths · consistent gap · images fill their cells · drops to 2 cols on mobile.
+        </p>
+ 
+        <div class="gallery-grid">
+            <div class="gallery-item" data-num="1"></div>
+            <div class="gallery-item" data-num="2"></div>
+            <div class="gallery-item" data-num="3"></div>
+            <div class="gallery-item" data-num="4"></div>
+            <div class="gallery-item" data-num="5"></div>
+            <div class="gallery-item" data-num="6"></div>
+        </div>
+    </div>
+
+    <!-- footer -->
+      <div class="exercise-block">
+        <p class="section-title">Footer Layout</p>
+        <p class="section-desc">
+            Three equal columns on top · copyright centred below · columns stack on mobile.
+        </p>
+ 
+        <footer class="site-footer">
+            <div class="footer-top">
+ 
+                <!-- Column 1 — About -->
+                <div class="footer-col">
+                    <p class="footer-col-title">About</p>
+                    <p>Designer and front-end developer based in Nairobi, focused on clear, purposeful digital work.</p>
+                </div>
+ 
+                <!-- Column 2 — Links -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Links</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+ 
+                <!-- Column 3 — Contact -->
+                <div class="footer-col">
+                    <p class="footer-col-title">Contact</p>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">✉</span>
+                        <span class="footer-contact-text">hello@alexrivera.design</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">🔗</span>
+                        <span class="footer-contact-text">github.com/alexrivera</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span class="footer-contact-icon">📍</span>
+                        <span class="footer-contact-text">Nairobi, Kenya</span>
+                    </div>
+                </div>
+ 
+            </div>
+ 
+            <hr class="footer-divider">
+ 
+            <!-- Copyright — centred -->
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 Alex Rivera <span>·</span> Built with HTML &amp; CSS</p>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
 </html>
